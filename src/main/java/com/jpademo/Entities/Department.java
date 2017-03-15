@@ -20,7 +20,6 @@ public class Department extends Auditing {
     /*@OneToMany(mappedBy = "dept", cascade = CascadeType.ALL)
     private List<Employee> employees;*/
 
-    private Long deptId;
     private String deptName;
 
 

@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface EmployeeRepo extends JpaRepository<Employee,Integer> {
+public interface EmployeeRepo extends JpaRepository<Employee,Long> {
 
-    public Employee findByEmpId(long id);
-
+    //public Employee findByEmpId(long id);
+    public Employee findById(long id);
     public Employee findByName(String name);
 }

@@ -19,7 +19,6 @@ public class Employee extends Auditing {
 
    // @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
-    private int empId;
 
     private String name;
 

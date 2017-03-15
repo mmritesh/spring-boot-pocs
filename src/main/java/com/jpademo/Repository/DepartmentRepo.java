@@ -15,6 +15,8 @@ public interface DepartmentRepo extends JpaRepository<Department,Long> {
 
     public Department findById(long id);
 
+    public Department findByDeptName(String name);
+
     @Modifying
     @Query("UPDATE Department d SET d.deptName = :deptname WHERE d.id = :id")
     int updateDeptName(@Param("id") long id, @Param("deptname") String deptName);

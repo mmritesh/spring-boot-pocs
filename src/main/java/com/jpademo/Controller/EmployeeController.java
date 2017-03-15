@@ -47,9 +47,9 @@ public class EmployeeController {
 
     }
 
-    @RequestMapping(value = "/getEmployee",method = RequestMethod.GET)
-    public Employee details(){
-        return employeeService.findByName("Ritesh");
+    @RequestMapping(value = "/getEmployees",method = RequestMethod.GET)
+    public List<Employee> details(){
+        return employeeService.findAll();
     }
 
     @RequestMapping(value = "/createEmployee",method = RequestMethod.POST)
@@ -64,9 +64,9 @@ public class EmployeeController {
         return dept;
     }
 
-    @RequestMapping(value = "/getDept",method = RequestMethod.GET)
-    public Department getDept(){
-        return departmentService.findById(3);
+    @RequestMapping(value = "/getDepts",method = RequestMethod.GET)
+    public List<Department> getDept(){
+        return departmentService.findAll();
     }
 
 
